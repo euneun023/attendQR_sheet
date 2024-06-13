@@ -1,0 +1,33 @@
+-- 5분마다 실행 쿼리 -- [프로시저 생성]
+DELIMITER //
+
+CREATE PROCEDURE record_bak()
+BEGIN
+  -- 대상 테이블로 데이터 복사
+  INSERT INTO att_record3 (SELECT * FROM att_record);
+
+  -- 원본 테이블 데이터 삭제
+  DELETE FROM att_record;
+END //
+
+DELIMITER ;
+
+-- 이벤트 스케줄러 활성화
+SET GLOBAL event_scheduler = ON;
+
+-- 매 5분마다 -- [프로시저 호출]
+CREATE EVENT record_bak_event
+ON SCHEDULE EVERY 5 MINUTE
+DO
+  CALL record_bak();
+
+
+-- 5분마다 실행 삭제 --
+-- 이벤트 스케줄러 활성화 
+SET GLOBAL event_scheduler = ON;
+
+-- 생성된 이벤트 삭제
+DROP EVENT IF EXISTS record_bak_event;
+
+-- 생성된 프로시저 삭제
+DROP PROCEDURE IF EXISTS record_bak;

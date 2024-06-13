@@ -1,0 +1,89 @@
+* { padding: 0; margin: 0; }
+
+html, body {
+  height: 100%;
+  background: #ffffff;
+  overscroll-behavior-y: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#loginBox {
+  width: 300px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.input-form-box {
+  border: 0px solid #ff0000;
+  display: flex;
+  margin-bottom: 5px;
+}
+.input-form-box > span {
+  display: block;
+  text-align: left;
+  padding-top: 5px;
+  min-width: 65px;
+}
+.button-login-box {
+  margin: 10px 0;
+  margin-top: 20px;
+}
+#loginBoxTitle {
+  color:#000000;
+  font-weight: bold;
+  font-size: 34px;  /*32px;*/
+  text-transform: uppercase;
+ /* padding: 2px; 5px*/
+ /* margin-bottom: 20px; /*20px*/
+  background: linear-gradient(to right, #270a09, #8ca6ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#inputBox {
+  margin: 10px;
+}
+
+#inputBox button {
+  padding: 3px 5px;
+}
+
+
+.line2{
+    
+    position: relative;
+    height: 1px;
+    width: 100%;
+  /*  margin: 36px 0;*/
+    margin : 10px;
+    
+    background-color: #d4d4d4;
+}/*
+.line2::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}*/
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+ /* border-radius: 10%;*/
+ border-radius: 10%;
+  height: 90%;
+  overflow-y: auto;
+  height: 450px;
+}

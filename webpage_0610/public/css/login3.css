@@ -1,0 +1,92 @@
+* { padding: 0; margin: 0; }
+
+html, body {
+  height: 100%;
+  background: #ffffff;
+  overscroll-behavior-y: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#loginBox {
+  width: 320px; /*300px*/
+  text-align: center;
+  background-color: #ffffff;
+}
+.input-form-box {
+  border: 0px solid #ff0000;
+  display: flex;
+  margin-bottom: 5px;
+}
+.input-form-box > span {
+  display: block;
+  text-align: left;
+  padding-top: 5px;
+  min-width: 65px;
+}
+.button-login-box {
+  margin: 10px 0;
+  margin-top: 30px;
+ 
+}
+#loginBoxTitle {
+  color:#000000;
+  font-weight: bold;
+  font-size: 36px;  /*32px; 34*/
+  text-transform: uppercase;
+ /* padding: 2px; 5px*/
+  margin-bottom: 40px; /*20px*/
+  background: linear-gradient(to right, #73C8A9, #373B44); /* #8ca6ce #270a09 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#inputBox {
+  margin: 10px;
+}
+
+#inputBox button {
+  padding: 3px 5px;
+}
+
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}/*
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}*/
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer {
+  width: 100%;
+ /* height: 99999px; /* footer의 높이 */
+  position: absolute;  
+  font-size: small;
+  bottom: 0px;
+  left: 0;
+  color: #000000;
+  margin-bottom: 3%;
+  font-style: italic;
+}

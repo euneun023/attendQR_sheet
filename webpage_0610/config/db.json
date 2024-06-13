@@ -1,0 +1,9 @@
+{
+    "development": {
+      "host": "34.64.190.242",
+      "user": "root",
+      "password": "1234",
+      "database": "attdb"
+    }
+  }
+
